@@ -1,0 +1,118 @@
+body{
+    background-color: rgb(129, 125, 129);
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: font1;
+    src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-ExtraLight.ttf);
+}
+h1{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 1em;
+    font-family: font1;
+}
+.container{
+    background-color: rgb(129, 125, 129);
+    width:22.5%;
+    height: 27em;
+    border-radius: 18px;
+    margin-left: 39%;
+    margin-top: 5%;
+    box-shadow: 5px 5px 5px 5px rgb(46, 45, 45);
+
+}
+button{
+    padding: 20px;
+    margin: 0 3px;
+    width: 4.3em;
+    /* border: 2px solid black; */
+    /* box-shadow: 10px 5px 5px grey; */
+    border-radius: 9px;
+    cursor: pointer;
+    background-color: rgb(129, 125, 129);
+    color: white;
+    position: relative;
+    left: 1.5em;
+    top: 2em;
+}
+.row{
+    margin: 8px 0;
+}
+.row input{
+    font-size: 21px;
+    margin: 0;
+    padding: 11px 0px;
+    /* border: 2px solid black; */
+    border-radius: 8px;
+    position: relative;
+    left: 0.9em;
+    top: 1em;
+}
+#clear{
+    width: 41%;
+}
+@media (max-width: 767px) {
+    /* Styles for mobile devices in portrait mode */
+    .container{
+        width: 15em;
+        height: 370px;
+        position: relative;
+        right: 6em;
+        top: 3em;
+        bottom: 3em;
+        
+    }
+    button{
+        padding: 15px;
+        width: 3.3em;
+    }
+    .row input{
+        font-size: 15.8px;
+        width: 82%;
+    }
+    #clear{
+        width: 39%;
+    }
+    h1{
+        font-size: large;
+        position: relative;
+        right: 0.5em;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablets */
+    .container{
+        width: 40%;
+    position: relative;
+top: 3em;
+right: 3em;}
+}
+@media (min-width: 1441px) {
+    /* Styles for medium to large desktops */
+    .container{
+        width: 26%;
+    height: 45em;}
+    button{
+        padding: 40px;
+        position: relative;
+        left: 2em;
+        font-size: larger;
+        width: 5em;
+    }
+        .row input{
+            width: 83%;
+            height: 3em;
+            position: relative;
+            left: 2em;
+        }
+        #clear{
+            width: 40%;
+        }
+        h1{
+            position: relative;
+            left: 2em;
+        }
+}
+
